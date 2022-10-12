@@ -1,0 +1,26 @@
+.lm-app,
+.lmv-component,
+.lmh-component,
+.lm-page {
+
+  /* Cancel lemonde.fr's reset */
+  --lm-lemonde-default-objects-max-width: unset;
+
+  /* Fonts */
+  --ff-the-antiqua-b:               "The-Antiqua-B-Variable", Garamond, Times, serif;
+  --ff-the-antiqua-b-non-variable:  "The-Antiqua-B", Garamond, Times, serif;
+  --ff-marr-sans:                   "Marr-Sans", Helvetica, Arial, Roboto, sans-serif;
+  --ff-marr-sans-condensed:         "Marr-Sans-Condensed", Helvetica, Arial, Roboto, sans-serif;
+  --ff-fette-engschrift:            "Fette-Engschrift", Helvetica, Arial, sans-serif;
+
+  /* Lengths */
+  --vw: 1vw;
+  --vh: 1vh;
+  --rem: 16px;
+  --nav-height: 65px;
+  --visible-screen-height: calc(100 * var(--vh) - var(--nav-height));
+  
+  @media screen and (max-width: 768px) {
+    --nav-height: 59px;
+  }
+}

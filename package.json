@@ -1,0 +1,19 @@
+{
+  "name": "lm-new-statics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "serve": "npx http-server ./dist --port 3000 --cors -c-1 --ext .html",
+    "build:watch": "npx nodemon --exec npm run build --watch ./src --ext .txt,.md,.html,.pug,.jade,.css,.scss,.sass,.less,.js,.jsx,.ts,.tsx,.json,.xml,.csv,.tsv,.jpg,.jpeg,.png,.gif,.svg",
+    "start": "npx concurrently -n 'build,serve' 'npm run build:watch' 'npm run serve'"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.8.4",
+    "typescript": "^4.8.4"
+  }
+}
