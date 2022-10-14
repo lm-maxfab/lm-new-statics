@@ -8,6 +8,13 @@
     "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
     "rootDir": "./src",
     "outDir": "./dist",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "src/types"
+    ]
   }
 }
