@@ -1,3 +1,5 @@
+// [WIP] should check if these /types/preact files are used somewhere
+
 export as namespace preact;
 
 import { JSXInternal } from './jsx';

@@ -2,5 +2,11 @@
   "presets": [
     ["@babel/preset-typescript"],
     ["@babel/preset-env", { "modules": false }]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-react-jsx", {
+      "pragma": "h",
+      "pragmaFrag": "Fragment"
+    }]
   ]
 }
