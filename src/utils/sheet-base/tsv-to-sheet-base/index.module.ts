@@ -1,9 +1,9 @@
-import SheetBase from '../SheetBase/index.module'
-import tsvToEncodedTsv from '../encode-tsv/index.module'
-import tsvTo2DArray from '../tsv-to-2D-array/index.module'
-import encodedTsvArrayToTsvArray from '../decode-tsv-array/index.module'
-import tsvArrayToCollectionsArray from '../tsv-array-to-collections-array/index.module'
-import flip2DArray from '../flip-2D-array/index.module'
+import SheetBase from '../SheetBase/index.module.js'
+import tsvToEncodedTsv from '../encode-tsv/index.module.js'
+import tsvTo2DArray from '../tsv-to-2D-array/index.module.js'
+import encodedTsvArrayToTsvArray from '../decode-tsv-array/index.module.js'
+import tsvArrayToCollectionsArray from '../tsv-array-to-collections-array/index.module.js'
+import flip2DArray from '../flip-2D-array/index.module.js'
 
 function tsvToSheetBase (tsv: string): SheetBase {
   const encodedTsv = tsvToEncodedTsv(tsv)

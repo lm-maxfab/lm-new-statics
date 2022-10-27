@@ -1,6 +1,5 @@
 {
   "presets": [
-    
     ["@babel/preset-env", { "modules": false }]
   ],
   "plugins": [
@@ -8,5 +7,7 @@
       "pragma": "h",
       "pragmaFrag": "Fragment"
     }]
-  ]
+  ],
+  "sourceMaps": true,
+  "inputSourceMap": true
 }

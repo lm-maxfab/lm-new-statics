@@ -1,5 +1,5 @@
-import BEM from './BEM/index.module'
-import getNamesArr from './get-names-arr/index.module'
+import BEM from './BEM/index.module.js'
+import getNamesArr from './get-names-arr/index.module.js'
 
 function bem (blockNameArg: any): BEM {
   const bem = new BEM()

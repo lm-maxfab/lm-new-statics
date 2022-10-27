@@ -1,4 +1,4 @@
-import getHeaderElement from '../get-header-element/index.module'
+import getHeaderElement from '../get-header-element/index.module.js'
 
 // [WIP] the func should inject itself the test divs
 // instead of expecting them to be already there

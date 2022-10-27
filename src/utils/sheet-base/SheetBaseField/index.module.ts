@@ -1,8 +1,9 @@
-import { createElement, VNode } from 'preact'
-import { SheetBaseValue } from '../SheetBase/index.module'
-import { SheetBaseCollectionValue } from '../SheetBaseCollection/index.module'
-import SheetBaseEntry, { SheetBaseEntryValue } from '../SheetBaseEntry/index.module'
-import StrToHtml from '../../components/StrToHtml'
+import { VNode } from 'preact'
+import { createElement } from '../../../lib/preact/v10.11.2/typed.index.js'
+import { SheetBaseValue } from '../SheetBase/index.module.js'
+import { SheetBaseCollectionValue } from '../SheetBaseCollection/index.module.js'
+import SheetBaseEntry, { SheetBaseEntryValue } from '../SheetBaseEntry/index.module.js'
+import StrToHtml from '../../../components/StroToHtml/index.js'
 
 type FieldType = 'string'|'text'|'number'|'bigint'|'boolean'|'null'|'undefined'|'html'|'ref'
 

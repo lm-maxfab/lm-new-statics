@@ -1,4 +1,4 @@
-import getNamesArr from '../get-names-arr/index.module'
+import getNamesArr from '../get-names-arr/index.module.js'
 
 export interface Block {
   name: string

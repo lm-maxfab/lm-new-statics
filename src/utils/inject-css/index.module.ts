@@ -1,14 +1,14 @@
-class CustomError extends Error {
+export class CustomError extends Error {
   details: string[]
-  constructor (message: string, data: string[]) {
+  constructor (message: string, details: string[]) {
     super(message)
-    this.details = data
+    this.details = details
   }
 }
 
 // [WIP] Maybe do something better than a 500ms timeout ?
 
-async function injectCss (_hrefs: string|string[]): Promise<true|CustomError> {
+export default async function injectCss (_hrefs: string|string[]): Promise<true|CustomError> {
   let isResolved = false
   return new Promise(resolve => {
     const hrefs = Array.isArray(_hrefs) ? _hrefs : [_hrefs]
@@ -17,7 +17,6 @@ async function injectCss (_hrefs: string|string[]): Promise<true|CustomError> {
     window.setTimeout(() => {
       if (isResolved) return
       const notLoaded = loadedTags.filter(tag => tag.loaded === false).map(tag => tag.href)
-      console.warn('Some styles could not be loaded:\n', notLoaded.join('\n'))
       const error = new CustomError('Some styles could not be loaded.', notLoaded)
       resolve(error)
     }, 500)
@@ -46,5 +45,3 @@ async function injectCss (_hrefs: string|string[]): Promise<true|CustomError> {
     for (const tag of styleTags) head.append(tag)
   })
 }
-
-export default injectCss

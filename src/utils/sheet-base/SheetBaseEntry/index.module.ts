@@ -1,8 +1,8 @@
-import SheetBaseCollection from '../SheetBaseCollection/index.module'
+import SheetBaseCollection from '../SheetBaseCollection/index.module.js'
 import SheetBaseField, {
   SheetBaseFieldDescriptor,
   SheetBaseFieldValue
-} from '../SheetBaseField/index.module'
+} from '../SheetBaseField/index.module.js'
 
 interface SheetBaseEntryDescriptor {
   id: string

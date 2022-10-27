@@ -1,7 +1,7 @@
-export default function readPropsNode (propsNode: HTMLDataElement): any {
+export default function readLmPropsNode (propsNode: HTMLDataElement): any {
   const nodeDataType = propsNode.dataset['type']
-  const unnamedDataChildren = [...propsNode.querySelectorAll(':scope > data:not([data-title])')] as HTMLDataElement[]
-  const namedDataChildren = [...propsNode.querySelectorAll(':scope > data[data-title]:not([data-title=""])')] as HTMLDataElement[]
+  const unnamedDataChildren = [...propsNode.querySelectorAll(':scope > data:not([title])')] as HTMLDataElement[]
+  const namedDataChildren = [...propsNode.querySelectorAll(':scope > data[title]:not([title=""])')] as HTMLDataElement[]
   const dataChildren = [...unnamedDataChildren, ...namedDataChildren]
 
   if (dataChildren.length === 0) {
@@ -18,15 +18,15 @@ export default function readPropsNode (propsNode: HTMLDataElement): any {
 
   } else if (namedDataChildren.length === 0) {
     // With only unnamed data children
-    return unnamedDataChildren.map(dataChild => readPropsNode(dataChild))
+    return unnamedDataChildren.map(dataChild => readLmPropsNode(dataChild))
 
   } else {
     // With named data children (unnamed are ignored)
     const returned: any = {}
     dataChildren.forEach(dataChild => {
-      const title = dataChild.dataset['title']
+      const title = dataChild.getAttribute('title')
       if (typeof title !== 'string' || title.length < 1) return
-      returned[title] = readPropsNode(dataChild)
+      returned[title] = readLmPropsNode(dataChild)
     })
     return returned
   }

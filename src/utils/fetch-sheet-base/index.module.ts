@@ -1,4 +1,4 @@
-import { SheetBase, tsvToSheetBase } from '../sheet-base/index.module'
+import { SheetBase, tsvToSheetBase } from '../sheet-base/index.module.js'
 
 async function fetchSheetBase (url: string): Promise<SheetBase|undefined> {
   try {

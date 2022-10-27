@@ -1,5 +1,5 @@
-import isValidClassName from '../../is-valid-css-class-name/index.module'
-import isFalsy from '../../is-falsy/index.module'
+import isValidClassName from '../../is-valid-css-class-name/index.module.js'
+import isFalsy from '../../is-falsy/index.module.js'
 
 function getNamesArr (arg: any): string[] {
   const returned: string[] = []

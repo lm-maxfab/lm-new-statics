@@ -1,7 +1,7 @@
 import SheetBaseCollection, {
   SheetBaseCollectionDescriptor,
   SheetBaseCollectionValue
-} from '../SheetBaseCollection/index.module'
+} from '../SheetBaseCollection/index.module.js'
 
 interface SheetBaseValue {
   readonly [key: string]: SheetBaseCollectionValue

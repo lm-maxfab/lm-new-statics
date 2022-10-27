@@ -1,7 +1,85 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div id="root"></div>
-    <script type="module" src="./index.js"></script>
+    <!-- [WIP] need a logic here to build with {{STATICS_URL}} template replacement -->
+    <!-- <script type="module" src="{{STATICS_URL}}/utils/init-lm-apps/index.js"></script> -->
+    <script type="module" src="../../utils/init-lm-apps/index.js"></script>
+
+    <div
+      class="lm-app-root"
+      data-app="app-name"
+      data-context="cover"
+      data-env="production">
+      
+      <!-- PROPS -->
+      <data class="lm-app-props" style="display: none;">
+        <data title="source">https://ex1.o7planning.com/html/resources/mov_bbb.mp4</data>
+        <data title="poster_url">https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png</data>
+        <data title="title"></data>
+        <data title="kicker"></data>
+        <data title="legend">Une légende</data>
+        <data title="credits">Un crédit</data>
+
+        <data title="loop" data-type="boolean">non</data>
+        <data title="autoplay" data-type="boolean">oui</data>
+        <data title="sound" data-type="boolean">non</data>
+        
+        <data title="sound_controls" data-type="boolean">oui</data>
+        <data title="play_controls" data-type="boolean">oui</data>
+        <data title="time_controls" data-type="boolean">oui</data>
+        <data title="fullscreen_controls" data-type="boolean">non</data>
+        
+        <data title="sensitive_content" data-type="boolean">non</data>
+        <data title="disclaimer_text">Attention mon gaté, c'est violent là.</data>
+        <data title="disclaimer_button">Vas-y gros montre les images</data>
+      </data>
+      
+      <!-- SPREADSHEETS -->
+      <data class="lm-app-sheets" style="display: none;">
+        <data title="production">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1316</data>
+        <data title="staging">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1317</data>
+        <data title="testing">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1318</data>
+        <data title="developpment">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1319</data>
+      </data>
+    </div>
+
+    <div
+      class="lm-app-root"
+      data-app="my-first-app"
+      data-context="cover"
+      data-env="production">
+      
+      <!-- PROPS -->
+      <data class="lm-app-props" style="display: none;">
+        <data title="source">https://ex1.o7planning.com/html/resources/mov_bbb.mp4</data>
+        <data title="poster_url">https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png</data>
+        <data title="title"></data>
+        <data title="kicker"></data>
+        <data title="legend">Une légende</data>
+        <data title="credits">Un crédit</data>
+
+        <data title="loop" data-type="boolean">non</data>
+        <data title="autoplay" data-type="boolean">oui</data>
+        <data title="sound" data-type="boolean">non</data>
+        
+        <data title="sound_controls" data-type="boolean">oui</data>
+        <data title="play_controls" data-type="boolean">oui</data>
+        <data title="time_controls" data-type="boolean">oui</data>
+        <data title="fullscreen_controls" data-type="boolean">non</data>
+        
+        <data title="sensitive_content" data-type="boolean">non</data>
+        <data title="disclaimer_text">Attention mon gaté, c'est violent là.</data>
+        <data title="disclaimer_button">Vas-y gros montre les images</data>
+      </data>
+      
+      <!-- SPREADSHEETS -->
+      <data class="lm-app-sheets" style="display: none;">
+        <data title="production">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1316</data>
+        <data title="staging">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1317</data>
+        <data title="testing">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1318</data>
+        <data title="developpment">https://assets-decodeurs.lemonde.fr/sheets/CYNRZeXoS3SsVRnsSwcrcAG1_a-E3A_1319</data>
+      </data>
+    </div>
+
   </body>
 </html>

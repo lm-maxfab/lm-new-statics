@@ -1,9 +1,11 @@
 {
   "include": ["src/**/*"],
   "compilerOptions": {
+    "lib": ["DOM", "ES2020", "ES2015"],
+    "sourceMap": true,
     "jsx": "preserve",
     "target": "es2015",
-    "module": "es2015",
+    "module": "es2020",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
